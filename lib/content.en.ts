@@ -1,0 +1,581 @@
+import type { SkillLevel } from "./profile";
+import type { ProjectDetail } from "./projects";
+import { profile } from "./profile";
+
+export const profileEn = {
+  ...profile,
+  headline: "IT Support | Networking | Linux Server | Web Automation",
+  description:
+    "Informatics Engineering student with hands-on experience in computer networking, troubleshooting, Linux Server administration, and building web applications that support network operations.",
+  location: "Indonesia",
+  focusRoles: [
+    "IT Support / IT Support Engineer (Junior)",
+    "Network Technician",
+    "NOC Engineer (Junior)",
+    "Junior Network Engineer",
+  ],
+  secondaryRoles:
+    "Also open to Junior System Administrator & Junior Web Developer roles (internal systems & network tools).",
+};
+
+export const experiencesEn = [
+  {
+    company: "CV Sanwanay Network — Grasinet ISP Partner",
+    role: "FTTH & OLT Field Support (Field Practice)",
+    period: "2024–2025 (~1 year)",
+    type: "professional" as const,
+    summary:
+      "Field practice in fiber optics & MikroTik-to-OLT integration at an ISP partner. FO cable pulling of 12 / 24 / 48 / 96 core, splicing from OTB – ODC – ODP, plus OLT configuration (VLAN, uplink) and PPPoE Server & Hotspot MikroTik-to-OLT services.",
+    points: [
+      "Assisted FO cable pulling of 12 core, 24 core, 48 core, and 96 core",
+      "Assisted fiber splicing at OTB, ODC, and ODP points",
+      "Assisted OLT configuration: VLAN and uplink",
+      "Assisted PPPoE Server & Hotspot MikroTik-to-OLT configuration",
+      "Assisted troubleshooting of FTTH connectivity & customer services",
+    ],
+    note: "Field practice with an ISP partner's technical team, focused on execution & troubleshooting.",
+  },
+  {
+    company: "CCTV Installation — CV Sanwanay Network & CV Gemilang Berkah",
+    role: "CCTV & Network Installation (Practice)",
+    period: "",
+    type: "professional" as const,
+    summary:
+      "Installed CCTV systems in company environments: camera mounting, cabling, and recorder setup.",
+    points: [
+      "Installed 8 CCTV cameras — CV Sanwanay Network",
+      "Installed 16 CCTV cameras — CV Gemilang Berkah",
+      "Camera mounting & cabling (video / power)",
+      "Recorder device setup & display testing",
+      "Connection & image quality troubleshooting",
+    ],
+    note: "CCTV & network installation practice in company environments.",
+  },
+  {
+    company: "Computer Lab Installation — SMK Ilhami Kemiri & SMPN Sukmulya",
+    role: "Computer Lab Installation & Configuration (Practice)",
+    period: "",
+    type: "professional" as const,
+    summary:
+      "Installed and set up school computer labs, including network cabling and connectivity testing.",
+    points: [
+      "Installed & arranged PC units in school computer labs",
+      "LAN cabling (UTP / RJ45) with neat arrangement",
+      "Network connectivity configuration & testing",
+      "Device and lab network troubleshooting",
+    ],
+    note: "Network & lab installation practice in school environments.",
+  },
+  {
+    company: "IDN Solo — Training Center",
+    role: "Networking & Cloud Training (Participant)",
+    period: "",
+    type: "professional" as const,
+    summary:
+      "Attended training at IDN Solo: MikroTik (Queue management), Cisco Routing, AWS setup, and Zabbix monitoring.",
+    points: [
+      "MikroTik material — including Queue management",
+      "Cisco Routing material — routing concepts & practice",
+      "AWS setup / introductory practice",
+      "Network monitoring practice with Zabbix",
+    ],
+    note: "Participant in hands-on networking & cloud training.",
+  },
+  {
+    company: "PT Aretanet Indonesia",
+    role: "Network Training & Support (Practice)",
+    period: "2024–2025",
+    type: "professional" as const,
+    summary:
+      "Involved in network training activities for schools and network support. Related to MikroTik package 2 and package 4 material.",
+    points: [
+      "Assisted delivery of computer networking training to schools",
+      "Supported activities related to MikroTik package 2 and package 4 material",
+      "Assisted basic network device configuration practice",
+      "Assisted network connectivity troubleshooting",
+    ],
+    note: "Hands-on network training & technical support.",
+  },
+  {
+    company: "Ilhami Net",
+    role: "Network Installation & Configuration (Practice)",
+    period: "",
+    type: "professional" as const,
+    summary:
+      "Experience configuring MikroTik and network installation work, including fiber optic (FO) cable pulling and installation.",
+    points: [
+      "Basic MikroTik configuration for ISP / RT-RW Net networks",
+      "Network installation including cable pulling",
+      "Fiber optic (FO) cable installation",
+      "Network device setup and connectivity troubleshooting",
+    ],
+    note: "Network installation & configuration practice.",
+  },
+  {
+    company: "PT Sogo Indonesia",
+    role: "Warehouse Staff",
+    period: "",
+    type: "operational" as const,
+    summary:
+      "Warehouse operational experience — demonstrating discipline, responsibility, and understanding of operational flow.",
+    points: [
+      "Warehouse inventory management and record-keeping",
+      "Goods receiving and inspection",
+      "Coordination with the operations team",
+      "Maintaining a tidy and organized work area",
+    ],
+    note: "Non-IT experience that built discipline & responsibility.",
+  },
+];
+
+export const skillGroupsEn: { title: string; level: SkillLevel; desc: string; skills: string[] }[] = [
+  {
+    title: "Networking",
+    level: "Practical Experience",
+    desc: "Applied hands-on: FTTH field work, MikroTik-to-OLT, LAN/FO installation, and lab.",
+    skills: [
+      "MikroTik RouterOS",
+      "Winbox",
+      "MikroTik Queue",
+      "Cisco Routing (training)",
+      "PPPoE Server",
+      "Hotspot (MikroTik to OLT)",
+      "OLT Config (VLAN & Uplink)",
+      "FTTH: OTB / ODC / ODP",
+      "FO cable pulling 12/24/48/96 core",
+      "Fiber splicing",
+      "TCP/IP",
+      "Subnetting",
+      "DHCP",
+      "VLAN",
+      "NAT",
+      "Firewall",
+      "PPPoE",
+      "Routing fundamentals",
+      "OSPF / RIP / BGP (basics & lab)",
+      "LAN",
+      "UTP / RJ45",
+      "Fiber Optics",
+      "Switch",
+      "Access Point",
+      "Troubleshooting",
+    ],
+  },
+  {
+    title: "Networking Tools",
+    level: "Learning",
+    desc: "Used for analysis, lab simulation, and monitoring (IDN Solo).",
+    skills: ["Wireshark", "Cisco Packet Tracer", "PNETLab", "EVE-NG", "ping", "traceroute", "Zabbix (monitoring)"],
+  },
+  {
+    title: "IT Support & System Administration",
+    level: "Practical Experience",
+    desc: "Personal Linux server + AWS & Zabbix training (IDN Solo).",
+    skills: [
+      "PC & connectivity troubleshooting",
+      "Ubuntu Server",
+      "Ubuntu Desktop",
+      "Linux CLI",
+      "SSH",
+      "DNS",
+      "CoreDNS",
+      "Docker (introductory)",
+      "AWS (setup / introductory — training)",
+      "Zabbix (monitoring — training)",
+      "systemd service",
+      "Port & service management",
+      "Service security basics",
+    ],
+  },
+  {
+    title: "Web Development & Automation",
+    level: "Project Experience",
+    desc: "Used in the SmartOLT project & internal tools.",
+    skills: [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Python",
+      "Netmiko (experimental)",
+      "WebSocket",
+      "Git",
+      "GitHub",
+    ],
+  },
+];
+
+export const timelineEn = [
+  {
+    period: "2024–2025",
+    title: "FTTH Field Practice — CV Sanwanay Network (Grasinet Partner)",
+    tag: "FTTH Field",
+    desc: "FO cable pulling 12/24/48/96 core, OTB–ODC–ODP splicing, OLT configuration (VLAN, uplink), plus PPPoE Server & Hotspot MikroTik-to-OLT. FTTH connectivity troubleshooting in the field.",
+    honest: "Field practice experience — period & details filled to actual, no customer counts.",
+  },
+  {
+    period: "2025",
+    title: "Networking & MikroTik — Fundamentals Practice",
+    tag: "Networking",
+    desc: "MikroTik configuration via Winbox & RouterOS. IP addressing, subnetting, DHCP, routing, NAT, firewall, DNS, troubleshooting. VLAN for segmentation, PPPoE & customer management concepts. OSPF/RIP/BGP experiments in a learning environment. ping, traceroute, Wireshark analysis. School & ISP/RT-RW Net network planning.",
+    honest: "Lab & practice — not all applied in production yet.",
+  },
+  {
+    period: "[Fill year]",
+    title: "IDN Solo Training — MikroTik, Cisco, AWS, Zabbix",
+    tag: "Training",
+    desc: "Training at IDN Solo: MikroTik (Queue), Cisco Routing, AWS setup/introduction, and network monitoring with Zabbix.",
+    honest: "Training — fill period & certificate if available. No grade claims.",
+  },
+  {
+    period: "2025",
+    title: "Cisco Networking Lab — Simulation",
+    tag: "Lab",
+    desc: "Cisco Packet Tracer: VLAN, router-on-a-stick, DHCP, routing. OSPF area 0/1 practice, OSPF-BGP redistribution. PNETLab & EVE-NG for virtual topologies. Inter-router connectivity analysis & troubleshooting.",
+    honest: "All labeled simulation / lab, not production.",
+  },
+  {
+    period: "2025",
+    title: "Ubuntu Server & Linux Administration",
+    tag: "Linux Server",
+    desc: "Built & managed my own Linux server: Ubuntu Server/Desktop, CLI administration, services & processes, application install & troubleshooting, Docker, CoreDNS for local DNS (sekolah.local, kasir.local), interface/IP/DNS/port/systemd configuration, systemd-resolved conflict troubleshooting, remote SSH, Git/GitHub.",
+    honest: "Personal / lab server. No public IP & sensitive credentials.",
+  },
+  {
+    period: "2025–2026",
+    title: "SmartOLT Web Project — ZTE C600 / C300",
+    tag: "Flagship Project",
+    desc: "Web application for OLT management & operational automation: repo web-c600, ZTE C600 exploration + C300 adaptation. Next.js frontend, Node+Express API, Prisma+PostgreSQL, Python+Netmiko for CLI automation, device discovery, provisioning, service profiles, WebSocket web terminal, Telnet/SSH exploration.",
+    honest: "Per-feature status is editable (Completed / In Progress / Experimental / Planned). Not an OLT hardware maker.",
+  },
+  {
+    period: "2026",
+    title: "Web Infrastructure & Operational Tools",
+    tag: "Infra & Web",
+    desc: "Web deployment on my own server, frontend/backend service management, domains & subdomains, HTTPS & panel hardening exploration, DNS, port forwarding, firewall, remote access. Attendance & inventory/warehouse app exploration: operational requirements, user flows, data management.",
+    honest: "Prototypes kept separate from working features & plans.",
+  },
+];
+
+export const educationEn = [
+  {
+    level: "Bachelor",
+    school: "Areta Informatics College",
+    major: "Informatics Engineering",
+    period: "2024 — present",
+    desc: "Focus on software, information systems, computer networking, and technology project management.",
+  },
+  {
+    level: "Vocational",
+    school: "SMK Ilhami Kemiri",
+    major: "Computer & Network Engineering (TKJ)",
+    period: "Graduated 2024",
+    desc: "Foundations of network configuration, system administration, hardware repair, and IT infrastructure.",
+  },
+];
+
+export const projectsEn: ProjectDetail[] = [
+  {
+    id: "smartolt",
+    category: "Flagship Project — Network Automation",
+    title: "SmartOLT Web — ZTE C600 & C300",
+    subtitle: "Structured OLT management + network operations automation",
+    status: "In Progress",
+    statusColor: "bg-amber-500",
+    problem:
+      "Manual OLT management (one-by-one CLI configuration, unstructured device discovery, undocumented service profiles) slows operations and is prone to human error.",
+    solution:
+      "A centralized web app: Next.js frontend + Express backend + PostgreSQL/Prisma database for device & profile data, Python/Netmiko for CLI automation experiments, and a WebSocket web terminal for controlled Telnet/SSH access.",
+    architecture: [
+      "Frontend: Next.js (OLT dashboard, device management, web terminal)",
+      "Backend: Node.js + Express REST API",
+      "Database: PostgreSQL + Prisma ORM",
+      "Automation: Python + Netmiko (ZTE CLI experiments)",
+      "Realtime: WebSocket for the web terminal",
+      "Target devices: ZTE C600 (primary exploration) + C300 adaptation",
+    ],
+    tech: ["Next.js", "Node.js", "Express", "Prisma", "PostgreSQL", "Python", "Netmiko", "WebSocket", "Telnet/SSH", "GitHub"],
+    contributions: [
+      "Built the web-c600 repo structure & continued SmartOLT development",
+      "Experimented with discovery of unconfigured devices",
+      "Experimented with provisioning & service profile management",
+      "Built the backend API + frontend-backend integration",
+      "Troubleshot device communication, service ports, & connectivity",
+      "Developed the web terminal via WebSocket",
+    ],
+    verified: [
+      "Web app structure (frontend + backend + DB) runs in a lab environment",
+      "Basic device connection via CLI experimented (not claimed production-stable)",
+      "Web terminal shows an interactive session (experimental status, editable)",
+    ],
+    challenges: [
+      "OLT device communication is not always consistent — needs retry & logging",
+      "Syncing CLI state vs web database",
+      "Backend service port conflicts & connectivity troubleshooting",
+      "C600 vs C300 behavior differences — needs command abstraction",
+    ],
+    features: [
+      { name: "Device discovery", status: "Experimental" },
+      { name: "Device management (CRUD)", status: "In Progress" },
+      { name: "Service profiles", status: "Experimental" },
+      { name: "Automated provisioning", status: "Experimental" },
+      { name: "Web terminal (WebSocket)", status: "In Progress" },
+      { name: "Telnet/SSH integration", status: "Experimental" },
+      { name: "ZTE C300 support", status: "In Progress" },
+    ],
+    imageNote: "Real screenshots / architecture diagrams can be added to /public — no fake screenshots.",
+  },
+  {
+    id: "networking",
+    category: "Networking Project",
+    title: "FTTH Field & MikroTik / Cisco Lab",
+    subtitle: "FO 12–96 core, OTB–ODC–ODP, OLT VLAN/uplink, PPPoE & Hotspot MikroTik to OLT",
+    status: "Practical Experience",
+    statusColor: "bg-blue-600",
+    problem:
+      "Needed end-to-end understanding of network operations: physical FO in the field, VLAN segmentation, OLT uplink, PPPoE/Hotspot customer management, and systematic troubleshooting.",
+    solution:
+      "Field (CV Sanwanay Network – Grasinet partner): FO 12/24/48/96 core pulling, OTB–ODC–ODP splicing, OLT VLAN & uplink config, PPPoE Server & Hotspot MikroTik-to-OLT. Lab: MikroTik (DHCP/NAT/firewall/VLAN) + Cisco Packet Tracer / PNETLab / EVE-NG (VLAN, router-on-a-stick, OSPF area 0/1, OSPF-BGP redistribution).",
+    architecture: [
+      "Field: FO 12/24/48/96 core, OTB – ODC – ODP, OLT + MikroTik to OLT",
+      "MikroTik: RouterOS + Winbox (PPPoE Server, Hotspot, VLAN, uplink)",
+      "Cisco: Packet Tracer topologies (lab)",
+      "Virtual lab: PNETLab / EVE-NG (lab)",
+      "Analysis: ping, traceroute, Wireshark",
+    ],
+    tech: ["MikroTik", "Winbox", "RouterOS", "OLT", "FTTH", "OTB/ODC/ODP", "PPPoE", "Hotspot", "VLAN", "Cisco Packet Tracer", "PNETLab", "EVE-NG", "Wireshark"],
+    contributions: [
+      "Assisted FO 12/24/48/96 core pulling (field)",
+      "Assisted OTB, ODC, ODP splicing (field)",
+      "Assisted OLT VLAN & uplink config (field)",
+      "Assisted PPPoE Server & Hotspot MikroTik-to-OLT (field)",
+      "IP, DHCP, NAT, firewall, DNS configuration (lab & practice)",
+      "VLAN & router-on-a-stick simulation (lab)",
+      "Basic OSPF/RIP/BGP practice (lab)",
+    ],
+    verified: [
+      "FTTH field & MikroTik-to-OLT practice documented (no customer count claims)",
+      "Lab topologies run & documented",
+      "Inter-segment connectivity verified in lab",
+    ],
+    challenges: [
+      "Pulling & dressing multi-core cable without breaking bending radius",
+      "Unstable attenuation / splicing results — rechecking OTB–ODC–ODP",
+      "OLT VLAN / uplink not connecting — checking tagging & uplink port",
+      "PPPoE / Hotspot not dialing — checking secrets, profiles, and path to OLT",
+      "Distinguishing lab vs production behavior",
+    ],
+    features: [
+      { name: "FO 12–96 core pulling (field)", status: "Completed" },
+      { name: "OTB–ODC–ODP splicing (field)", status: "Completed" },
+      { name: "OLT VLAN & uplink (field)", status: "In Progress" },
+      { name: "PPPoE Server Mikrotik to OLT", status: "In Progress" },
+      { name: "Hotspot Mikrotik to OLT", status: "Experimental" },
+      { name: "VLAN & inter-VLAN routing (lab)", status: "Completed" },
+      { name: "OSPF area 0/1 (lab)", status: "Experimental" },
+    ],
+    imageNote: "Real field photos / FTTH diagrams can be added — no sensitive customer data.",
+  },
+  {
+    id: "ubuntu",
+    category: "Ubuntu Server Project",
+    title: "Personal Linux Server & CoreDNS",
+    subtitle: "Ubuntu administration, Docker, local DNS, SSH",
+    status: "Practical Experience",
+    statusColor: "bg-emerald-600",
+    problem:
+      "Needed a personal server for hosting web apps, local DNS, and system administration practice without relying on paid services.",
+    solution:
+      "Built Ubuntu Server/Desktop: CLI management, systemd services, Docker, CoreDNS for sekolah.local & kasir.local, remote SSH, Git for versioning. Troubleshot systemd-resolved vs CoreDNS conflict.",
+    architecture: [
+      "OS: Ubuntu Server + Ubuntu Desktop",
+      "Local DNS: CoreDNS (sekolah.local, kasir.local)",
+      "Services: systemd, Docker containers",
+      "Access: remote SSH",
+      "Code: Git + GitHub",
+    ],
+    tech: ["Ubuntu Server", "Linux CLI", "systemd", "CoreDNS", "Docker", "SSH", "Git"],
+    contributions: [
+      "Installation & basic service hardening",
+      "Interface, local IP, DNS, port configuration",
+      "Resolving port 53 conflict (systemd-resolved)",
+      "Deploying frontend/backend services on my own server",
+    ],
+    verified: [
+      "Resolving .local domains works in the lab network",
+      "Services run via systemd & can be restarted",
+      "Remote SSH access verified in lab",
+    ],
+    challenges: [
+      "DNS port 53 conflict with systemd-resolved",
+      "Port & firewall management to avoid conflicts",
+      "Keeping the server stable without a public IP",
+    ],
+    features: [
+      { name: "Ubuntu Server admin", status: "Completed" },
+      { name: "Local CoreDNS", status: "Completed" },
+      { name: "systemd services", status: "Completed" },
+      { name: "Docker introduction", status: "In Progress" },
+      { name: "HTTPS / hardening", status: "Planned" },
+    ],
+    imageNote: "Service & port diagrams can be added — no public IP / credentials.",
+  },
+  {
+    id: "webops",
+    category: "Web Development Project",
+    title: "Internal Systems: Attendance & Inventory",
+    subtitle: "Exploration of warehouse & attendance operational apps",
+    status: "Prototype",
+    statusColor: "bg-slate-600",
+    problem:
+      "Operations (attendance, warehouse stock) are often recorded manually — needing an understanding of the flow & a digital prototype that fits field needs.",
+    solution:
+      "Web app exploration: mapping operational requirements, designing user flows, data CRUD, and attendance & inventory prototypes. Focus on correct data management, not claims of complete features.",
+    architecture: [
+      "Frontend: Next.js",
+      "Backend: Express API",
+      "Database: PostgreSQL + Prisma",
+    ],
+    tech: ["Next.js", "Express", "Prisma", "PostgreSQL"],
+    contributions: [
+      "Operational requirements analysis",
+      "User flow & data schema design",
+      "Basic CRUD prototype",
+    ],
+    verified: ["Flow & schema documented", "CRUD prototype runs locally (editable)"],
+    challenges: ["Aligning features with real field needs", "Keeping scope honest (prototype vs production)"],
+    features: [
+      { name: "Attendance (prototype)", status: "Planned" },
+      { name: "Inventory/warehouse", status: "Planned" },
+      { name: "Basic CRUD & auth", status: "Experimental" },
+    ],
+    imageNote: "Only show features that were actually built/tested.",
+  },
+];
+
+export const uiEn = {
+  nav: {
+    beranda: "Home",
+    tentang: "About",
+    keahlian: "Skills",
+    pengalaman: "Experience",
+    timeline: "Timeline",
+    smartolt: "SmartOLT",
+    proyek: "Projects",
+    pendidikan: "Education",
+    kontak: "Contact",
+  },
+  hero: {
+    badge: "Open to IT Support • Junior NOC • Network Technician",
+    viewProjects: "View Projects",
+    viewCv: "View CV",
+    myExperience: "My Experience",
+    contactMe: "Contact Me",
+    cvOnline: "Online CV — save as PDF",
+    downloadCv: "Download CV (PDF)",
+    stats: [
+      { n: "7", l: "Experience & training" },
+      { n: "FTTH", l: "FO 12–96 core & OLT" },
+      { n: "IDN Solo", l: "AWS & Zabbix" },
+    ],
+    diagramLabel: "Flow illustration — Web → API → OLT",
+  },
+  about: {
+    eyebrow: "About Me",
+    heading: "IT Support & Networking focus, strengthened by Linux & Web Automation",
+    targetTitle: "Target Roles",
+    p1: "I am an Informatics Engineering student with hands-on experience in computer networking, IT Support, Linux Server administration, network infrastructure, troubleshooting, and building web applications that support network operations.",
+    p2: "My journey since 2025 is honestly documented: from installation & MikroTik practice, Cisco simulation, managing my own Ubuntu Server, to building the SmartOLT web application for managing ZTE C600/C300 devices. Every feature status is verifiable — no senior/production claims that haven't happened.",
+  },
+  skills: {
+    eyebrow: "Skills",
+    heading: "4 Skill Groups — Honest & Measurable",
+    subtext:
+      "No fake percentages. Each group uses a label of Basic / Learning / Practical Experience / Project Experience based on real field, training, and lab work.",
+  },
+  experience: {
+    eyebrow: "Work Experience",
+    heading: "Real Practice, Honest Language",
+    subtext:
+      "Distinguished between work/field-practice experience and personal lab.",
+    footnote: "Full details & periods are available in the CV and during the recruitment process.",
+  },
+  timeline: {
+    eyebrow: "Timeline 2025–2026",
+    heading: "From Networking Practice → Server → SmartOLT",
+    subtext: "Period labels can be changed to a year / quarter. Every item is honest: lab vs production is distinguished.",
+  },
+  smartolt: {
+    featured: "⭐ Flagship Project",
+    statusNote: "Transparent per-feature status",
+    h1: "1. Problem",
+    h2: "2. Solution & Architecture",
+    h3: "3. My Contributions",
+    h4: "4. Features & Verification Status",
+    h5: "5. Verified Results",
+    h6: "6. Challenges & Troubleshooting",
+    noteTitle: "7–8. Screenshots & Status:",
+    focusNote: "Focus on software & integration — not an OLT hardware maker claim. Do not display sensitive IP/credentials.",
+  },
+  projects: {
+    eyebrow: "Other Projects",
+    heading: "Networking • Ubuntu Server • Web",
+    subtext: 'Click "View Detail" for description, goal, technologies, contributions, challenges, & status.',
+    viewDetail: "View Detail →",
+    ctaTitle: "Documentation & repo access",
+    ctaText:
+      "Topology diagrams, screenshots, and repositories are published progressively on GitHub. Contact me for repo access and a live demo.",
+    dialog: {
+      goal: "Goal",
+      problem: "Problem solved",
+      architecture: "Architecture",
+      contributions: "My Contributions",
+      features: "Features & Status",
+      verified: "Verified Results",
+      challenges: "Challenges & Troubleshooting",
+      close: "Close",
+      repo: "View Repository",
+      demo: "Live Demo",
+      requestAccess: "Request repo access via WhatsApp",
+    },
+  },
+  education: {
+    eyebrow: "Education",
+    heading: "Formal Background",
+  },
+  contact: {
+    eyebrow: "Contact",
+    heading: "Let's Connect",
+    subtext:
+      "Open to internships, junior roles, lab collaboration, or technical discussions on networking / Linux / SmartOLT.",
+    identityTitle: "Identity & Channels",
+    labels: { name: "Name", github: "GitHub", email: "Email", whatsapp: "WhatsApp", linkedin: "LinkedIn", location: "Location" },
+    pending: "Available during recruitment",
+    linkedinPending: "Coming soon — reach me via GitHub",
+    footerNote:
+      "Fastest response via GitHub or WhatsApp. For recruitment, I attach my CV, active contact, and supporting documents.",
+    form: {
+      title: "Quick Form",
+      subtitle: "Fill this form, then send — the message opens in your email app.",
+      name: "Name",
+      namePh: "Your name",
+      email: "Email",
+      emailPh: "email@company.com",
+      purpose: "Purpose",
+      options: ["IT Support / NOC / Network recruitment", "Internship / Practice", "SmartOLT / Lab collaboration", "Other"],
+      message: "Message",
+      messagePh: "Hi Hamdali, we are interested in your profile...",
+      sendMail: "Send via Email",
+      sendGithub: "Contact via GitHub",
+    },
+  },
+  footer: {
+    navTitle: "Navigation",
+    contactTitle: "Contact",
+    rights: "Honest, structured, and easy to update.",
+    tagline: "Journey 2025–2026 • Networking • Linux • SmartOLT",
+  },
+};
+
+export type Ui = typeof uiEn;
